@@ -4,6 +4,14 @@
     
   </head>
   <body>
-    <div>my 404 page </div>
+    <noscript>
+      <strong>We're sorry but it doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
   </body>
+  <script>
+    const path = window.location.pathname.slice(1);
+	console.log(path)
+    localStorage.setItem('path', path);
+    window.location.href='../';
+</script> 
 </html>
